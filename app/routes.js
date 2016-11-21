@@ -4,9 +4,9 @@ var app = express();
 var task = require('./models/task');
 
 module.exports = function(app) {
-    app.get('/', function(req, res) {
-        res.sendfile('./public/index.html');
-    });
+    //app.get('/', function(req, res) {
+     //   res.sendfile('./public/index.html');
+    //});
 
     app.get('/api/tasks', function(req, res) {
         task.find(function(err, tasks) {
